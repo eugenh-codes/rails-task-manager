@@ -1,0 +1,15 @@
+<%= form_with model: @task do |f| %>
+  <fieldset>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+  </fieldset>
+  <fieldset>
+    <%= f.check_box :completed %>
+    <%= f.label :completed, "Completed" %>
+  </fieldset>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
